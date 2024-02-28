@@ -1,5 +1,5 @@
 from http.server import BaseHTTPRequestHandler
-from peer_session.db import DB
+from peer_session_3.db import DB
 
 class UpServer(BaseHTTPRequestHandler):
     def do_GET(self):
