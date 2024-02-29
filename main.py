@@ -4,7 +4,7 @@ from http.server import HTTPServer
 from peer_session_3 import upserver
 
 # Set up logger
-logging.basicConfig(level=logging.debug, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 host_name = "0.0.0.0"
