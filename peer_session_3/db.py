@@ -17,6 +17,7 @@ class DB:
     self.database_user = os.environ.get("POSTGRES_USER")
     self.database_password = os.environ.get("POSTGRES_PASSWORD")
 
+
     logging.debug(f"Connecting to host {self.database_host}")
     logging.debug(f"port : {self.database_port}")
     logging.debug(f"database : {self.database_name}")
