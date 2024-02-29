@@ -12,10 +12,11 @@ class DB:
   def configure(self):
     """Configure the connection to the database."""
     self.database_host = os.environ.get("DATABASE_HOST")
-    self.database_port = os.environ.get("DATABASE_PORT")
-    self.database_name = os.environ.get("DATABASE_NAME")
-    self.database_user = os.environ.get("DATABASE_USER")
-    self.database_password = os.environ.get("DATABASE_PASSWORD")
+    self.database_port = int(os.environ.get("DATABASE_PORT"))
+    self.database_name = os.environ.get("POSTGRES_DB")
+    self.database_user = os.environ.get("POSTGRES_USER")
+    self.database_password = os.environ.get("POSTGRES_PASSWORD")
+
 
     logging.debug(f"Connecting to host {self.database_host}")
     logging.debug(f"port : {self.database_port}")
